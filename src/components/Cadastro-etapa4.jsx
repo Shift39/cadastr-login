@@ -7,15 +7,16 @@ function CadastroEtapa4() {
 
         <>
         
+        
         <div className={styles.corpo_card}>
         <div className={styles.card}>
-            <div className={styles.card_lado_esquerdo}>
+        <div className={styles.card_lado_esquerdo}>
                 
                 <div className={styles.esquerdo_cima}>
 
                 <h1>Cadastro - Psicólogo</h1>
                 <br/>
-                <h1>Etapa 2</h1>
+                <h1>Etapa 4</h1>
                 
                 
                 </div>
@@ -30,45 +31,39 @@ function CadastroEtapa4() {
     
                 </div>
             
-            </div>
+        </div>
 
-
-            <div className={styles.card_lado_direito}>
+        <div className={styles.card_lado_direito}>
 
                 <div className={styles.direito_cima}>
                 
-                <span>
-
-                    
-             
-                    
                 
-                </span>
-
-                
-
                 <div className={styles.baixo_cadastro_dois}>
 
-                <form className={styles.baixo_cadastro_dois_sobre}>
-                    <span className={styles.a}>
-                        <span>Sobre</span>
-                        <input className= {styles.sobre} type="text" id="sobre"/>
-                    </span>
-                </form>
-
-                <form className={styles.baixo_lado_direito}>
-
-
+               
+                
+                   
+                <span className={styles.sobre_a}>
                     
+                    
+                    <span>Sobre</span>
+                    <input className= {styles.sobre} type="text" id="sobre" />
 
 
-                </form>
+                </span>
+
+
+    
+                
                 </div>
             <button className={styles.botao_final}>Avançar</button>
         </div>
         </div>
+        
+        
         </div>
         </div>
+   
         
         </>
 

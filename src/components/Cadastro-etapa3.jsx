@@ -16,7 +16,7 @@ function CadastroEtapa3() {
 
                 <h1>Cadastro - Psicólogo</h1>
                 <br/>
-                <h1>Etapa 2</h1>
+                <h1>Etapa 3</h1>
                 
                 
                 </div>

@@ -27,8 +27,8 @@ function CadastroEtapa2() {
                 <div className={styles.fases}>
 
                     <span className={styles.gama}>Informações Pessoais</span>
-                    <span className={styles.gama_um}>Endereço</span>
-                    <span className={styles.gama}>Educação</span>
+                    <span className={styles.gama}>Endereço</span>
+                    <span className={styles.gama_um}>Educação</span>
                     <span className={styles.gama}>Sobre</span>
                     <span className={styles.gama}>Foto de Perfil</span>
     
@@ -97,14 +97,15 @@ function CadastroEtapa2() {
 
 
                 </form>
-                </div>
-                </div>
+            </div>
+            
             <button className={styles.botao_final}>Avançar</button>
             </div>
 
 
         </div>
 
+        </div>
         </div>
         
         </>

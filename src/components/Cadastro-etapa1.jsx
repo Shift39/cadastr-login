@@ -7,9 +7,9 @@ function CadastroEtapa1() {
         <>
           <div class={styles.corpo_card}>
             <div class={styles.card}>
-            <div class={styles.card_lado_esquerdo}>
+            <div className={styles.card_lado_esquerdo}>
                 
-                <div class={styles.esquerda_cima}>
+                <div className={styles.esquerdo_cima}>
 
                 <h1>Cadastro - Psicólogo</h1>
                 <br/>
@@ -20,9 +20,9 @@ function CadastroEtapa1() {
                 
                 <div className={styles.fases}>
 
-                    <span className={styles.gama_um}>Informações Pessoais</span>
+                    <span className={styles.gama}>Informações Pessoais</span>
                     <span className={styles.gama}>Endereço</span>
-                    <span className={styles.gama}>Educação</span>
+                    <span className={styles.gama_um}>Educação</span>
                     <span className={styles.gama}>Sobre</span>
                     <span className={styles.gama}>Foto de Perfil</span>
     
@@ -94,7 +94,7 @@ function CadastroEtapa1() {
                 </form>
 
             </div>
-                <button className={styles.botao_final}>Avançar</button>
+                <button className={styles.botao_final_cadastro}>Avançar</button>
         </div>
         </div>
         </div>
