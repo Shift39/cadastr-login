@@ -1,0 +1,267 @@
+/* nav bar css*/
+
+.navbar{
+    width: 100%;
+    height: 13vh;
+     
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 7px 1px 0px rgba(0, 0, 0, 0.226);
+}
+
+.navbar .lado_direito{
+    width: 30%;
+    height: 13vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .lado_esquerdo{
+    width: 30%;
+    height: 10vh;
+    background-image: url("/src/components/images/Capturar.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30vh;
+    margin-top: 0.8%;
+    
+}
+
+.cadastrar{
+    width: 20%;
+    height: 5vh;
+    margin-right: 3%;
+    font-size: 1.8vh;
+    background-color: white;
+    color: #50BFB8;
+    border: 2px solid #50BFB8;
+    border-radius: 7%;
+}
+.entrar{
+    width: 20%;
+    height: 5vh;
+    font-size: 1.8vh;
+    color: white;
+    background-color: #50BFB8;
+    border-radius: 7%;
+}
+
+/* nav bar css*/
+
+
+
+
+/* card css*/
+
+.corpo_card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    
+    width: 90%;
+    height: 85vh;
+    margin-top: 2%;
+    
+    display: flex;
+    border-radius: 6%;
+}
+
+.card_lado_esquerdo{
+    width: 35%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 8%;
+    background-color: #50BFB8;
+    color: white;
+}
+
+.esquerdo_cima{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+    justify-content: space-between;
+}
+
+.fases{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gama_um{
+    width: 70%;
+    
+     
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+.gama{
+    width: 70%;
+    height: 20%;
+     
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 8%;
+}
+
+
+.card_lado_direito{
+    width: 65%;
+    height: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.082);
+    border-top-right-radius: 7%;
+    border-bottom-right-radius: 7%;
+    
+}
+
+.direito_cima{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    
+    color: #50BFB8;
+}
+
+
+.baixo{
+    /* baixo seria a parte de baixo do lado direito do card de cadastro da pagina de cadastro*/
+
+    width: 100%;
+    height: 65%;
+    
+    display: flex;
+}
+.baixo_cadastro_dois{
+    /* baixo seria a parte de baixo do lado direito do card de cadastro da pagina de cadastro*/
+
+    width: 100%;
+    height: 65%;
+    margin-top: 13%;
+    display: flex;
+    margin-bottom: 18%;
+    margin-left: -8%;
+}
+.baixo_lado_esquerdo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    
+}
+.baixo_lado_direito{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    
+}
+
+.a{
+    width: 70%;
+    height: 20%;
+     
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 7%;
+}
+.a_input{
+
+  display: block;
+  margin: 0;
+  padding: var(--inputPaddingV) var(--inputPaddingH);
+  color: black;
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--inputFontSize);
+  font-weight: inherit;
+  line-height: var(--inputLineHeight);
+  height: 5vh;
+  border-radius: 0.4rem;
+  transition: box-shadow var(--transitionDuration);
+
+}
+
+.a_cima{
+    width: 92%;
+    height: 20%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.botao_final{
+    width: 10%;
+    height: 5vh;
+    margin-left: 7.2%;
+    font-size: 1.8vh;
+    background-color: white;
+    color: #50BFB8;
+    border: 2px solid #50BFB8;
+    border-radius: 7%;
+    margin-left: -0.5%;
+    
+}
+/* card css*/
+
+
+/*sobre css*/
+
+.sobre{
+    
+    display: block;
+    margin: 0;
+    padding: var(--inputPaddingV) var(--inputPaddingH);
+    color: black;
+    width: 100%;
+    font-family: inherit;
+    font-size: var(--inputFontSize);
+    font-weight: inherit;
+    line-height: var(--inputLineHeight);
+    height: 20vh;
+    border-radius: 0.4rem;
+    transition: box-shadow var(--transitionDuration)
+}
+.sobre_a{
+      width: 100%;
+      height: 100%;
+       
+      display: flex;
+      flex-direction: column;
+      
+      margin-top: 7%;
+}
+
+.baixo_cadastro_dois_sobre{
+    /* baixo seria a parte de baixo do lado direito do card de cadastro da pagina de cadastro*/
+
+    width: 80%;
+    height: 65%;
+    margin-top: 13%;
+    display: flex;
+    margin-bottom: 18%;
+    margin-left: -1%;
+    color: black;
+}
+
+/*sobre css*/
