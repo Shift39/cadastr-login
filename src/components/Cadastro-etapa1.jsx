@@ -176,14 +176,14 @@ function CadastroEtapa1() {
     )
 
 
-    function cadastrar() {
-        var nome = nome.value;
-        var dataNascimento = dataNascimento.value;
-        var genero = genero.value;
-        var email = email.value;
-        var cpf = cpf.value;
-        var senha = senha.value;
-        var numeroTelefone = numeroTelefone.value;
+    /*function cadastrar() {
+        var nomeVar = nome.value;
+        var dataNascimentoVar = dataNascimento.value;
+        var generoVar = genero.value;
+        var emailVar = email.value;
+        var cpfVar = cpf.value;
+        var senhaVar = senha.value;
+        var numeroTelefoneVar = numeroTelefone.value;
 
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -191,13 +191,13 @@ function CadastroEtapa1() {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                nomeCompletoServer: nome,
-                dataNascimentoServer: dataNascimento,
-                generoServer: genero,
-                emailServer: email,
-                cpfServer: cpf,
-                senhaServer: senha,
-                numeroTelefoneServer: numeroTelefone
+                nomeCompletoServer: nomeVar,
+                dataNascimentoServer: dataNascimentoVar,
+                generoServer: generoVar,
+                emailServer: emailVar,
+                cpfServer: cpfVar,
+                senhaServer: senhaVar,
+                numeroTelefoneServer: numeroTelefoneVar
 
             }).then(function (res) {
                 console.log(res)
@@ -206,7 +206,7 @@ function CadastroEtapa1() {
             })
         })
 
-    }
+    }*/
 
 }
 

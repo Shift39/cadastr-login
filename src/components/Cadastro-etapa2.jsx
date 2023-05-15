@@ -165,14 +165,14 @@ function CadastroEtapa2() {
         </>
     )
 
-    function cadastrar() {
-        var cep = cep.value;
-        var estado = estado.value;
-        var cidade = cidade.value;
-        var bairro = bairro.value;
-        var rua = rua.value;
-        var numero = numero.value;
-        var complemento = complemento.value;
+    /*function cadastrar() {
+        var cepVar = cep.value;
+        var estadoVar = estado.value;
+        var cidadeVar = cidade.value;
+        var bairroVar = bairro.value;
+        var ruaVar = rua.value;
+        var numeroVar = numero.value;
+        var complementoVar = complemento.value;
 
         fetch("/usuarios/cadastrar",{
             method: "POST",
@@ -180,20 +180,20 @@ function CadastroEtapa2() {
                 "Content-Type":"application/json"
             },
             body: JSON.stringify({
-                cepServer: cep,
-                estadoServer: estado,
-                cidadeServer: cidade,
-                bairroServer: bairro,
-                ruaServer: rua,
-                numeroServer: numero,
-                complementoServer: complemento
+                cepServer: cepVar,
+                estadoServer: estadoVar,
+                cidadeServer: cidadeVar,
+                bairroServer: bairroVar,
+                ruaServer: ruaVar,
+                numeroServer: numeroVar,
+                complementoServer: complementoVar
             }).then(function (res) {
                 console.log(res)
             }).catch(function(res){
                 console.log(res)
             })
         })
-    }
+    }*/
 }
 
 

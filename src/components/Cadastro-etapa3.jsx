@@ -46,7 +46,7 @@ function CadastroEtapa3() {
                                 <form className={styles.baixo_lado_esquerdo}>
                                     <span className={styles.a}>
                                         <span>Nome da Universidade</span>
-                                        <input className={styles.a_input} type="text" id="universidade" placeholder="SPtech" />
+                                        <input className={styles.a_input} type="text" id="nomeUniversidade" placeholder="SPtech" />
                                     </span>
 
                                     <span className={styles.a}>
@@ -61,7 +61,7 @@ function CadastroEtapa3() {
 
                                     <span className={styles.a}>
                                         <span>Numero da matricula</span>
-                                        <input className={styles.a_input} type="text" id="numero" placeholder="121412" />
+                                        <input className={styles.a_input} type="text" id="matricula" placeholder="121412" />
                                     </span>
 
                                 </form>
@@ -104,22 +104,22 @@ function CadastroEtapa3() {
                        
                         <span style={{ marginTop: '10%' }}>
                             <span>Nome da universidade</span>
-                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
+                            <TextField id="nomeUniversidade" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
                             <span>Ano de conclusão</span>
-                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
+                            <TextField id="ano" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
                             <span>Grau academico</span>
-                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
+                            <TextField id="grau" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
                             <span>Numero da matricula</span>
-                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
+                            <TextField id="matricula" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         
@@ -138,6 +138,32 @@ function CadastroEtapa3() {
 
         </>
     )
+
+
+    /*function cadastrar() {
+        var universidade = nomeUniversidade.value;
+        var anoConclusao = ano.value;
+        var grauAcademico = grau.value;
+        var numeroMatricula = matricula.value;
+
+        fetch("/usuarios/cadastrar",{
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                universidadeServer: universidade,
+                anoConclusaoServer: anoConclusao,
+                grauAcademicoServer: grauAcademico,
+                numeroMatriculaServer: numeroMatricula
+            }).then(function (res) {
+                console.log(res)
+            }).catch(function(res){
+                console.log(res)
+            })
+        })
+        
+    }*/
 
 }
 
