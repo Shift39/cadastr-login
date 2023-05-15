@@ -1,25 +1,25 @@
 /* nav bar css*/
 
-.navbar{
+.navbar {
     width: 100%;
     height: 13vh;
-     
+
     position: relative;
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 7px 1px 0px rgba(0, 0, 0, 0.226);
 }
 
-.navbar .lado_direito{
+.navbar .lado_direito {
     width: 30%;
     height: 13vh;
-   
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar .lado_esquerdo{
+.navbar .lado_esquerdo {
     width: 30%;
     height: 10vh;
     background-image: url("/src/components/images/Capturar.PNG");
@@ -27,11 +27,11 @@
     background-repeat: no-repeat;
     background-size: 30vh;
     margin-top: 0.8%;
-    
+
 }
 
-.cadastrar{
-    width: 20%;
+.cadastrar {
+    width: 10vh;
     height: 5vh;
     margin-right: 3%;
     font-size: 1.8vh;
@@ -40,8 +40,9 @@
     border: 2px solid #50BFB8;
     border-radius: 7%;
 }
-.entrar{
-    width: 20%;
+
+.entrar {
+    width: 10vh;
     height: 5vh;
     font-size: 1.8vh;
     color: white;
@@ -52,166 +53,156 @@
 /* nav bar css*/
 
 
+/* bolinhas ao lado das etapas*/
+
+.circle {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 100%;
+    background-color: #50BFB8;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    margin-top: -1%;
+    margin-right: 5%;
+}
+
+.circle_one {
+    width: 3vh;
+    height: 3vh;
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    color: #50BFB8;
+    margin-top: -1%;
+    margin-right: 5%;
+}
+
+/* bolinhas ao lado das etapas*/
+
+
+
+
+/* Container */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+
+}
+
+/* Container */
+
+
+
 
 
 /* card css*/
 
-.corpo_card{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.card{
-    
-    width: 90%;
-    height: 100vh;
-    margin-top: 2%;
-    
-    display: flex;
-    border-radius: 6%;
-}
 
-.card_lado_esquerdo{
-    width: 35%;
-    height: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    border-top-left-radius: 8%;
-    border-bottom-left-radius: 8%;
-    background-color: #50BFB8;
-    color: white;
-}
 
-.esquerdo_cima{
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    box-shadow: 2px 2xp 2px 2px black;
+    border-radius: 2%;
     display: flex;
-    flex-direction: column;
-    margin-left: 9%;
-    justify-content: space-between;
-}
-
-.fases{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.gama_um{
     width: 70%;
-    
-     
-    display: flex;
-    flex-direction: column;
-    margin-left: 30%;
-    margin-top: 10%;
-}
 
-.gama{
-    width: 70%;
-    height: 20%;
-     
-    display: flex;
-    flex-direction: column;
-    margin-left: 30%;
-    margin-top: 8%;
 }
 
 
-.card_lado_direito{
-    width: 65%;
+
+
+/* card lado direito*/
+.card_lado_direito {
+
     height: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.082);
-    border-top-right-radius: 7%;
-    border-bottom-right-radius: 7%;
-    
+    width: 60%;
+
 }
 
-.direito_cima{
+.direito_cima {
     display: flex;
     flex-direction: column;
     padding-left: 8%;
-    
+
     color: #50BFB8;
 }
 
-
-.baixo{
+.baixo {
     /* baixo seria a parte de baixo do lado direito do card de cadastro da pagina de cadastro*/
 
     width: 100%;
     height: 65%;
-    
-    display: flex;
-}
-.baixo_cadastro_dois{
-    /* baixo seria a parte de baixo do lado direito do card de cadastro da pagina de cadastro*/
 
-    width: 100%;
-    height: 65%;
-    margin-top: 13%;
     display: flex;
-    margin-bottom: 18%;
-    margin-left: -8%;
-    color: black;
 }
-.baixo_lado_esquerdo{
+
+.baixo_lado_esquerdo {
+    /* o parte de baixo do cadastro é dividida em duas divs, a div lado esquerdo, e a div lado direito, ou "baixo_lado_esquerdo" e "baixo-lado_direito"*/
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
-    
+
 }
-.baixo_lado_direito{
+
+.baixo_lado_direito {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
-    
+
 }
 
-.a{
+.a {
     width: 70%;
     height: 20%;
-     
+
     display: flex;
     flex-direction: column;
-    
+
     margin-top: 7%;
 }
-.a_input{
 
-  display: block;
-  margin: 0;
-  padding: var(--inputPaddingV) var(--inputPaddingH);
-  color: black;
-  width: 100%;
-  font-family: inherit;
-  font-size: var(--inputFontSize);
-  font-weight: inherit;
-  line-height: var(--inputLineHeight);
-  height: 5vh;
-  border-radius: 0.4rem;
-  transition: box-shadow var(--transitionDuration);
+.a_input {
+
+    display: block;
+    margin: 0;
+    padding: var(--inputPaddingV) var(--inputPaddingH);
+    color: black;
+    width: 100%;
+    font-family: inherit;
+    font-size: var(--inputFontSize);
+    font-weight: inherit;
+    line-height: var(--inputLineHeight);
+    height: 5vh;
+    border-radius: 0.4rem;
+    transition: box-shadow var(--transitionDuration);
 
 }
 
-.a_cima{
+.a_cima {
     width: 92%;
     height: 20%;
     margin-top: 3%;
     display: flex;
     flex-direction: column;
-    
+    color: black;
+
 }
 
-.botao_final{
+.botao_final {
     width: 10%;
     height: 5vh;
     margin-left: 7.2%;
@@ -221,9 +212,10 @@
     border: 2px solid #50BFB8;
     border-radius: 7%;
     margin-left: -0.5%;
-    
+
 }
-.botao_final_cadastro{
+
+.botao_final_cadastro {
     width: 10%;
     height: 5vh;
     margin-left: 7.2%;
@@ -233,16 +225,91 @@
     border: 2px solid #50BFB8;
     border-radius: 7%;
     margin-left: 7%;
-    margin-top: -100%;
-    
+
+
 }
+
+/* card lado direito*/
+
+
+
+
+
+
+
+/* card lado esquerdo*/
+
+.card_lado_esquerdo {
+
+    height: 100%;
+    background-color: #50BFB8;
+    width: 40%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+.esquerdo_cima {
+    display: flex;
+    flex-direction: column;
+    margin-left: 9%;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+
+.fases {
+    width: 100%;
+    height: 60;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.gama_um {
+    width: 70%;
+
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 10%;
+    color: white;
+}
+
+.gama {
+    width: 70%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 8%;
+    flex-direction: row;
+    color: white;
+}
+
+/* card lado esquerdo*/
+
+
+
+
+
+
 /* card css*/
+
+
+
+
+
 
 
 /*sobre css*/
 
-.sobre{
-    
+.sobre {
+
     display: block;
     margin: 0;
     padding: var(--inputPaddingV) var(--inputPaddingH);
@@ -256,17 +323,18 @@
     border-radius: 0.4rem;
     transition: box-shadow var(--transitionDuration)
 }
-.sobre_a{
-      width: 100%;
-      height: 100%;
-       
-      display: flex;
-      flex-direction: column;
-      margin-left: 7%;
-      margin-top: 7%;
+
+.sobre_a {
+    width: 85%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-top: 7%;
 }
 
-.baixo_cadastro_dois_sobre{
+.baixo_cadastro_dois_sobre {
     /* baixo seria a parte de baixo do lado direito do card de cadastro da pagina de cadastro*/
 
     width: 80%;
@@ -279,3 +347,98 @@
 }
 
 /*sobre css*/
+
+
+
+
+
+
+
+
+
+/* css versão mobile*/
+
+.container_dois {
+    width: 100%;
+    height: 160vh;
+    display: none;
+    justify-content: center;
+    padding: 1%;
+}
+
+.card_mobile {
+
+    border-radius: 3%;
+    width: 95%;
+    padding: 5%;
+    height: 130vh;
+}
+
+.imagem {
+    border-radius: 2%;
+    width: 100%;
+    min-height: 10%;
+    background-image: url('/src/components/images/Capturar.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30vh;
+
+}
+
+.partes {
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    
+    
+}
+.partes_paciente {
+    display: flex;
+    width: 60%;
+    margin-left: 30%;
+    
+}
+
+.circle_mobile {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 100%;
+    background-color: #50bfb886;
+    border: 2px solid #50bfb886;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1%;
+    margin-right: 5%;
+    color: white;
+}
+
+.circle_mobile_one {
+    width: 4vh;
+    height: 4vh;
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid #50bfb886;
+    display: flex;
+    justify-content: center;
+    color: #50BFB8;
+    margin-top: -1%;
+    margin-right: 5%;
+    align-items: center;
+}
+
+/* css versão mobile*/
+
+
+
+@media screen and (max-Width: 950px) {
+
+    .navbar,
+    .container {
+        display: none;
+    }
+
+    .container_dois {
+        display: flex;
+    }
+}

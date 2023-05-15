@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import styles from "../html-css-template/css/cadastro.module.css"
 import { Grid } from '@mui/material';
 import { TextField } from "@mui/material";
-import { Button } from "@mui/material"; 
-import { convertColorToString } from "material-ui/utils/colorManipulator";
+import { Button } from "@mui/material";
 
-function CadastroEtapa2() {
-
+function CadastroPacienteEtapa2() {
 
     return (
         <>
@@ -18,7 +16,7 @@ function CadastroEtapa2() {
 
                         <div className={styles.esquerdo_cima}>
 
-                            <h1>Cadastro - Psicólogo</h1>
+                            <h1>Cadastro - Paciente</h1>
                             <br />
                             <h1>Etapa 2</h1>
 
@@ -26,12 +24,9 @@ function CadastroEtapa2() {
                         </div>
                         <div className={styles.fases}>
 
-                            <span className={styles.gama}><div className={styles.circle}>1</div>Informações Pessoais</span>
+                            <span className={styles.gama}><div className={styles.circle}>1</div> Informações Pessoais</span>
                             <span className={styles.gama}><div className={styles.circle_one}>2</div>Endereço</span>
-                            <span className={styles.gama}><div className={styles.circle}>3</div>Educação</span>
-                            <span className={styles.gama}><div className={styles.circle}>4</div>Sobre</span>
-                            <span className={styles.gama}><div className={styles.circle}>5</div>Foto de Perfil</span>
-
+                            <span className={styles.gama}><div className={styles.circle}>3</div>Foto de Perfil</span>
                         </div>
 
                     </Grid>
@@ -88,11 +83,10 @@ function CadastroEtapa2() {
                                 </form>
 
                             </div>
-                            
+                            <button className={styles.botao_final_cadastro}>Avançar</button>
 
 
                         </Grid>
-                        <button className={styles.botao_final_cadastro}>Avançar</button>
 
                     </Grid>
 
@@ -103,56 +97,54 @@ function CadastroEtapa2() {
             <Grid className={styles.container_dois}>
 
                 <Grid xs={12} md={12} className={styles.card_mobile}>
-                    
+
                     <Grid xs={12} md={12} className={styles.imagem}></Grid>
-                    <Grid xs={12} md={10} className={styles.partes}>
+                    <Grid xs={12} md={10} className={styles.partes_paciente}>
                     <div className={styles.circle_mobile}>1</div>
                     <div className={styles.circle_mobile_one}>2</div>
                     <div className={styles.circle_mobile}>3</div>
-                    <div className={styles.circle_mobile}>4</div>
-                    <div className={styles.circle_mobile}>5</div>
                     </Grid>
-                    <form style={{display:'flex', flexDirection:'column'}}>
+                    <form style={{ display: 'flex', flexDirection: 'column' }}>
                         <h1>Endereço</h1>
-                        
-                        
+
+
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>CEP</span>
-                        <TextField id="cep" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>CEP</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Estado</span>
-                        <TextField id="estado" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Estado</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Cidade</span>
-                        <TextField id="cidade" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Cidade</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Bairro</span>
-                        <TextField id="bairro" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Bairro</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Rua</span>
-                        <TextField id="rua" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Rua</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Numero</span>
-                        <TextField id="numero" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Numero</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Complemento</span>
-                        <TextField id="complemento" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Complemento</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
-                        <Button variant="contained" style={{ marginTop: '10%', backgroundColor:'#50BFB8' }}>Avançar</Button>
+                        <Button variant="contained" style={{ marginTop: '10%', backgroundColor: '#50BFB8' }}>Avançar</Button>
 
                     </form>
 
@@ -162,39 +154,10 @@ function CadastroEtapa2() {
                 </Grid>
 
             </Grid>
+
         </>
     )
 
-    function cadastrar() {
-        var cep = cep.value;
-        var estado = estado.value;
-        var cidade = cidade.value;
-        var bairro = bairro.value;
-        var rua = rua.value;
-        var numero = numero.value;
-        var complemento = complemento.value;
-
-        fetch("/usuarios/cadastrar",{
-            method: "POST",
-            headers: {
-                "Content-Type":"application/json"
-            },
-            body: JSON.stringify({
-                cepServer: cep,
-                estadoServer: estado,
-                cidadeServer: cidade,
-                bairroServer: bairro,
-                ruaServer: rua,
-                numeroServer: numero,
-                complementoServer: complemento
-            }).then(function (res) {
-                console.log(res)
-            }).catch(function(res){
-                console.log(res)
-            })
-        })
-    }
 }
 
-
-export default CadastroEtapa2;
+export default CadastroPacienteEtapa2

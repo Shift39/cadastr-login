@@ -2,22 +2,21 @@ import React, { useState } from "react";
 import styles from "../html-css-template/css/cadastro.module.css"
 import { Grid } from '@mui/material';
 import { TextField } from "@mui/material";
-import { Button } from "@mui/material"; 
+import { Button } from "@mui/material";
 
-function CadastroEtapa1() {
+function CadastroPacienteEtapa1() {
 
     return (
         <>
-
             <Grid className={styles.container}>
 
-                <Grid xs={12} md={12} className={styles.card} >
+                <Grid xs={10} md={10} className={styles.card}>
 
                     <Grid xs={10} md={5} className={styles.card_lado_esquerdo}>
 
                         <div className={styles.esquerdo_cima}>
 
-                            <h1>Cadastro - Psicólogo</h1>
+                            <h1>Cadastro - Paciente</h1>
                             <br />
                             <h1>Etapa 1</h1>
 
@@ -27,9 +26,7 @@ function CadastroEtapa1() {
 
                             <span className={styles.gama}><div className={styles.circle_one}>1</div> Informações Pessoais</span>
                             <span className={styles.gama}><div className={styles.circle}>2</div>Endereço</span>
-                            <span className={styles.gama}><div className={styles.circle}>3</div>Educação</span>
-                            <span className={styles.gama}><div className={styles.circle}>4</div>Sobre</span>
-                            <span className={styles.gama}><div className={styles.circle}>5</div>Foto de Perfil</span>
+                            <span className={styles.gama}><div className={styles.circle}>3</div>Foto de Perfil</span>
 
                         </div>
 
@@ -55,7 +52,7 @@ function CadastroEtapa1() {
                             </div>
                         </div>
 
-                        <Grid xs={12} md={12} style={{ height: '70%' }}>
+                        <Grid xs={12} md={12} style={{ height: '74%' }}>
 
 
                             <div className={styles.baixo}>
@@ -100,13 +97,13 @@ function CadastroEtapa1() {
                                 </form>
 
                             </div>
-                            
+                            <button className={styles.botao_final_cadastro}>Avançar</button>
 
 
                         </Grid>
-                        <button className={styles.botao_final_cadastro}>Avançar</button>
+
                     </Grid>
-                    
+
                 </Grid>
 
             </Grid>
@@ -114,54 +111,52 @@ function CadastroEtapa1() {
             <Grid className={styles.container_dois}>
 
                 <Grid xs={12} md={12} className={styles.card_mobile} >
-                    
+
                     <Grid xs={12} md={12} className={styles.imagem}></Grid>
-                    <Grid xs={12} md={10} className={styles.partes}>
+                    <Grid xs={12} md={10} className={styles.partes_paciente}>
                     <div className={styles.circle_mobile_one}>1</div>
                     <div className={styles.circle_mobile}>2</div>
                     <div className={styles.circle_mobile}>3</div>
-                    <div className={styles.circle_mobile}>4</div>
-                    <div className={styles.circle_mobile}>5</div>
                     </Grid>
-                    <form style={{display:'flex', flexDirection:'column'}}>
+                    <form style={{ display: 'flex', flexDirection: 'column' }}>
                         <h1>Informações pessoais</h1>
-                        
+
                         <span style={{ marginTop: '10%' }}>
-                        <span>Nome Completo</span>
-                        <TextField id="nome" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Nome Completo</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Data de nascimento</span>
-                        <TextField id="dataNascimento" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Data de nascimento</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Email</span>
-                        <TextField id="email" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Email</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Numero de telefone</span>
-                        <TextField id="numeroTelefone" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Numero de telefone</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Gênero</span>
-                        <TextField id="genero" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Gênero</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>CPF</span>
-                        <TextField id="cpf" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>CPF</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
                         <span style={{ marginTop: '10%' }}>
-                        <span>Senha</span>
-                        <TextField id="senha" label="" variant="outlined" style={{ width: '100%'}} />
+                            <span>Senha</span>
+                            <TextField id="nome" label="" variant="outlined" style={{ width: '100%' }} />
                         </span>
 
-                        <Button variant="contained" style={{ marginTop: '10%', backgroundColor:'#50BFB8' }}>Avançar</Button>
+                        <Button variant="contained" style={{ marginTop: '10%', backgroundColor: '#50BFB8' }}>Avançar</Button>
 
                     </form>
 
@@ -171,43 +166,9 @@ function CadastroEtapa1() {
                 </Grid>
 
             </Grid>
-
         </>
     )
 
-
-    function cadastrar() {
-        var nome = nome.value;
-        var dataNascimento = dataNascimento.value;
-        var genero = genero.value;
-        var email = email.value;
-        var cpf = cpf.value;
-        var senha = senha.value;
-        var numeroTelefone = numeroTelefone.value;
-
-        fetch("/usuarios/cadastrar", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                nomeCompletoServer: nome,
-                dataNascimentoServer: dataNascimento,
-                generoServer: genero,
-                emailServer: email,
-                cpfServer: cpf,
-                senhaServer: senha,
-                numeroTelefoneServer: numeroTelefone
-
-            }).then(function (res) {
-                console.log(res)
-            }).catch(function(res){
-                console.log(res)
-            })
-        })
-
-    }
-
 }
 
-export default CadastroEtapa1;
+export default CadastroPacienteEtapa1
