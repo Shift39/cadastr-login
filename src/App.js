@@ -4,7 +4,7 @@ import Loginn from "./pages/Login"
 
 function App() {
   return (
-    <CadastroPaciente />
+    <Loginn />
   );
 }
 

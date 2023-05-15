@@ -2,19 +2,16 @@ import React, { useState } from "react";
 import styles from "../html-css-template/css/cadastro.module.css"
 import styles2 from "../html-css-template/css/login.module.css"
 import { Grid } from '@mui/material';
+import { TextField } from "@mui/material";
 
 function LoginFunction() {
 
     return (
         <>
-            <Grid container style={{ width: '100%',  minHeight: '100vh', display: 'flex', padding: '2%' }}>
-                <Grid xs={8} md={8} style={{ border: '2px solid black', borderRadius: '2%', display: 'flex', height: '80vh' }}>
-
-
-
-                </Grid>
+            <Grid container style={{ width: '100%',  minHeight: '100vh', display: 'flex', padding: '2%',alignItems:'center',justifyContent:'center' }}>
+                
                 <Grid xs={4} md={4} style={{borderRadius: '2%', display: 'flex', height: '60vh',
-                                            flexDirection:'column',alignItems:'center'}}>
+                                            flexDirection:'column',alignItems:'center', border:'0.5px solid black', padding:'1%'}}>
 
 
                     <b class={styles2.bem_vindo}>
@@ -27,12 +24,12 @@ function LoginFunction() {
 
                     <span class={styles2.a_login}>
                         <span>Email</span>
-                        <input class={styles.a_input_login} type="text" id="email" placeholder="Ex: nome@gmail.com" />
+                        <TextField id="email" label="" variant="outlined" style={{ width: '100%' }} />
                     </span>
 
                     <span class={styles2.a_login}>
                         <span>Senha</span>
-                        <input class={styles.a_input_login} type="text" id="senha" placeholder="*************" />
+                        <TextField id="senha" label="" variant="outlined" style={{ width: '100%' }} />
                     </span>
 
                     <span class={styles2.avisos}>
